@@ -43,6 +43,24 @@ Request Body:
 }
 ```
 
+Sample Response:
+```
+{
+    "message": "Room created successfully",
+    "room": {
+        "roomName": "Sample Samba",
+        "numberOfSeats": 3,
+        "amenities": [
+            "Projector",
+            "Whiteboard"
+        ],
+        "pricePerHour": 30,
+        "_id": "",
+        "__v": 0
+    }
+}
+```
+
 Create Bookings
 Endpoint: POST /hallBooking/bookRoom
 
@@ -52,12 +70,30 @@ Request Body:
 ```
 {
     "customerName": "Sample sieve",
-    "roomId": "64f1b80f9e8f5c5a247dd98c",
+    "roomId": "",
     "date": "2024-09-04T00:00:00Z",
     "startTime": "10:00 AM",
     "endTime": "12:00 PM"
 }
 
+```
+
+Sample Response:
+```
+{
+    "message": "Room booked successfully",
+    "booking": {
+        "customerName": "Sample sieve",
+        "roomId": "",
+        "date": "2024-09-04T00:00:00.000Z",
+        "startTime": "10:00 AM",
+        "endTime": "12:00 PM",
+        "bookingDate": "2024-09-04T13:51:15.338Z",
+        "bookingStatus": "Confirmed",
+        "_id": "",
+        "__v": 0
+    }
+}
 ```
 
 Get bookings:
