@@ -106,7 +106,7 @@ Endpoint: GET /hallBooking/getBookedRooms
 
 Description: This is used to get booked customers.
 
-Get bookings:
+Get repeated customers:
 Endpoint: GET /hallBooking/getRepeatedCustomers
 
 Description: This API call is used to get Repeated customers. An repeated customer is finded by number of bookings he made.
