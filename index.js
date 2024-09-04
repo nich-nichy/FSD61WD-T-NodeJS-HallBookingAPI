@@ -32,8 +32,8 @@ const connectDB = async () => {
 connectDB();
 
 // Routes
-app.get('/status', (req, res) => {
-    res.send('Hello World!');
+app.get('/', (req, res) => {
+    res.send('Test route is working!');
 });
 
 app.use("/hallBooking", require("./routes/booking.route"));
